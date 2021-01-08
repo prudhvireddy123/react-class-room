@@ -1,0 +1,8 @@
+.app-header {
+  background-color: #282c34;
+  height: 40px;
+  color: white;
+  display: block;
+  padding: 20px;
+  align-items: center;
+}
