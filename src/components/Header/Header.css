@@ -2,7 +2,9 @@
   background-color: #282c34;
   height: 40px;
   color: white;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 20px;
   align-items: center;
 }

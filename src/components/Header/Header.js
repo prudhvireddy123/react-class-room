@@ -11,8 +11,6 @@ function Header(props) {
             return "Students"
         }
     }
-
-    console.log(props)
     const title = getTile(props.location.pathname)
     return (
         <div className="app-header">
