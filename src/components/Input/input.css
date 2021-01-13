@@ -1,0 +1,29 @@
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+.input {
+  width: 100%;
+  display: block;
+}
+
+.input-element {
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 5px 10px;
+}
+.input-element:focus {
+  outline: none;
+  border: 1px solid blue;
+  background-color: #ccc;
+  padding: 5px 10px;
+}
+
+.error {
+  outline: none;
+  border: 1px solid red;
+  background-color: white;
+  padding: 5px 10px;
+}

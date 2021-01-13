@@ -9,6 +9,13 @@ export const getClassRooms = () => {
     })
 }
 
-export const createClassRoom = () => {
+
+export const createClassRoom = (data) => {
+    return axios.post('/api/classrooms', data).then((res) => {
+        return res.data
+    }).catch(error => {
+        console.log("Error failed to Create The Class")
+        throw error
+    })
 
 }

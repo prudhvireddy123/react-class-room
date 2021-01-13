@@ -2,6 +2,7 @@ import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import './Header.css'
 
+// const TITLES = { '/': "Classrooms", "/students": }
 function Header(props) {
 
     const getTile = (path) => {
@@ -9,6 +10,8 @@ function Header(props) {
             return "Classrooms"
         } else if (path.startsWith("/students")) {
             return "Students"
+        } else if (path.startsWith("/add-class")) {
+            return "Add Class"
         }
     }
     const title = getTile(props.location.pathname)

@@ -15,7 +15,10 @@ export default class School extends Component {
     }
     constructor(props) {
         super(props)
-        this.state = { selectedClassRoom: null, classRooms: [], loading: false, error: false }
+        this.state = {
+            selectedClassRoom: null, classRooms: [],
+            loading: false, error: false
+        }
     }
     onClassRoomSelected = (classRoomId) => {
         this.props.history.push(`/students/${classRoomId}`)
@@ -32,6 +35,9 @@ export default class School extends Component {
     render() {
         return (
             <div className="class-list">
+                <button onClick={() => {
+                    this.props.history.push('./add-class')
+                }}>Add Classroom</button>
                 {this.state.loading && (<Loader />)}
                 {this.state.error && (<h2>Failed to load</h2>)}
                 {this.state.classRooms.map(((classRoom, i) => {
