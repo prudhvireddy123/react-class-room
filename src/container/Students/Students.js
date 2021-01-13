@@ -18,10 +18,14 @@ export default class Students extends Component {
             this.setState({ students: [], loading: false, error: true })
         })
     }
+    onClickAddStudent = () => {
+        this.props.history.push('/add-student')
+    }
 
     render() {
         return (
             <div>
+                <button onClick={this.onClickAddStudent}>Add Student</button>
                 {this.state.loading && (<Loader />)}
                 {this.state.error && (<h2>Failed to load</h2>)}
                 {this.state.students.map((student, key) => {

@@ -12,6 +12,8 @@ function Header(props) {
             return "Students"
         } else if (path.startsWith("/add-class")) {
             return "Add Class"
+        } else if (path.startsWith("/add-student")) {
+            return "Add Student"
         }
     }
     const title = getTile(props.location.pathname)

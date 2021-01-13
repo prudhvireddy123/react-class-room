@@ -6,6 +6,7 @@ import Students from './container/Students/Students'
 import About from './components/About/About'
 import './App.css';
 import AddClass from './container/add-class/AddClass';
+import AddStudent from './container/add-student/AddStudent';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/students/:classRoom" component={Students}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/add-class" component={AddClass}></Route>
+        <Route path="/add-student" component={AddStudent}></Route>
       </Switch>
     </div>
   );
