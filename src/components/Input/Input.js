@@ -10,6 +10,12 @@ export default function Input(props) {
         inputElement = <input className={classes} {...props.config} onBlur={props.onInputBlur} onChange={props.onInputChange} />
     } else if (props.elementType === "textarea") {
         inputElement = <textarea className="input input-element" {...props.config} onChange={props.onInputChange} />
+    } else if (props.elementType === "select") {
+        inputElement = <select {...props.config} onChange={props.onInputChange}>
+            {props.config.options.map((option, id) => {
+                return (<option key={id} value={option}>{option}</option>)
+            })}
+        </select>
     }
 
 

@@ -47,6 +47,17 @@ export default class AddClass extends Component {
                     "type": "text",
                     "error": false
                 }
+            },
+            section: {
+                elementType: "select",
+                config: {
+                    "value": "",
+                    "name": "section",
+                    "label": "Sections",
+                    "type": "select",
+                    "error": false,
+                    "options": ["A", "B"]
+                }
             }
         }
     }
