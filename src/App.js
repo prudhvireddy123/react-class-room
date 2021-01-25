@@ -7,6 +7,7 @@ import About from './components/About/About'
 import './App.css';
 import AddClass from './container/add-class/AddClass';
 import AddStudent from './container/add-student/AddStudent';
+import ClassRoomExplain from './container/classroom-explain/ClassRoomExplain';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" component={About}></Route>
         <Route path="/add-class" component={AddClass}></Route>
         <Route path="/add-student" component={AddStudent}></Route>
+        <Route path="/explain-classroom" component={ClassRoomExplain}></Route>
       </Switch>
     </div>
   );

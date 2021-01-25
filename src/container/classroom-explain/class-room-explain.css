@@ -1,0 +1,18 @@
+.class-room-explain {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20;
+}
+
+.class-room-list {
+  background-color: #ac4a4a;
+  padding: 10px;
+  flex: 50%;
+}
+.selected-class-room {
+  background-color: #442a2a;
+  padding: 10px;
+  flex: 50%;
+  height: 500px;
+}
