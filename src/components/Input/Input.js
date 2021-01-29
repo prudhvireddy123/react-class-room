@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './input.css'
-export default function Input(props) {
+function Input(props) {
     let inputElement = null
     let classes = "input input-element"
     if (props.config.error && props.config.error === true) {
@@ -26,3 +27,11 @@ export default function Input(props) {
         </div>
     )
 }
+
+Input.propTypes = {
+    config: PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        onInputChange: PropTypes.func.isRequired
+    }).isRequired
+}
+export default Input
